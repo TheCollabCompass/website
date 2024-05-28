@@ -1,8 +1,8 @@
 import React from 'react';
-import { Card, CardHeader, CardBody, Image, Button, Divider } from '@nextui-org/react';
-import HowToRegIcon from '@mui/icons-material/HowToReg';
-import LockIcon from '@mui/icons-material/Lock';
-export default function LiveTripCard() {
+import HourglassTopIcon from '@mui/icons-material/HourglassTop';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import AddTaskIcon from '@mui/icons-material/AddTask';
+const CompletedTripCard = () => {
   return (
     <>
       <div className='max-w-sm bg-white bg-opacity-10 border border-gray-200 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 mb-4 overflow-hidden'>
@@ -15,8 +15,8 @@ export default function LiveTripCard() {
           </a>
           <div className='flex'>
             <div className='border-2 border-green-500 rounded-lg flex justify-center items-center'>
-              <p className='text-small p-1 text-green-500'>Registration Open</p>
-              <HowToRegIcon fontSize='small' sx={{ color: 'green', fill: '#22c55e' }} />
+              <p className='text-small p-1 text-green-500'>Completed</p>
+              <AddTaskIcon fontSize='small' sx={{ color: 'blue', fill: '#22c55e', marginRight: '2px' }} />
             </div>
           </div>
           <div className='mt-3'>
@@ -25,12 +25,9 @@ export default function LiveTripCard() {
                 <small className='text-default-400'>Collborator</small>
                 <p className='font-bold text-lg'>Rana Ahsan Ansar</p>
               </div>
+
               <div className='mb-4'>
-                <small className='text-default-400'>Per Person</small>
-                <p className='font-bold text-lg'>Rs. 7000/-</p>
-              </div>
-              <div className='mb-4'>
-                <small className='text-default-400'>Date</small>
+                <small className='text-default-400'>Expected Date</small>
                 <p className='font-bold text-lg'>3rd May, 2024</p>
               </div>
             </div>
@@ -41,7 +38,7 @@ export default function LiveTripCard() {
               href='#'
               className='inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'
             >
-              Explore
+              Vew Highlights
               <svg
                 className='rtl:rotate-180 w-3.5 h-3.5 ms-2'
                 aria-hidden='true'
@@ -57,37 +54,27 @@ export default function LiveTripCard() {
                   d='M1 5h12m0 0L9 1m4 4L9 9'
                 />
               </svg>
+              {/* <svg
+                className='rtl:rotate-180 w-3.5 h-3.5 ms-2'
+                aria-hidden='true'
+                xmlns='http://www.w3.org/2000/svg'
+                fill='none'
+                viewBox='0 0 14 10'
+              >
+                <path
+                  stroke='currentColor'
+                  stroke-linecap='round'
+                  stroke-linejoin='round'
+                  stroke-width='2'
+                  d='M1 5h12m0 0L9 1m4 4L9 9'
+                />
+              </svg> */}
             </a>
-            {/* <a
-            href="#"
-            className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-          >
-            Explore
-            <svg
-              className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 14 10"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M1 5h12m0 0L9 1m4 4L9 9"
-              />
-            </svg>
-          </a> */}
-          </div>
-        </div>
-        <div className='mt-0'>
-          <div className='border-t-1 border-white py-2 px-2 flex flex-row justify-between bg-red-500'>
-            <p className='font-bold'>REGISTRATION ENDS IN</p>
-            <p>1D : 24H : 30M : 30S</p>
           </div>
         </div>
       </div>
     </>
   );
-}
+};
+
+export default CompletedTripCard;

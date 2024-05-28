@@ -4,7 +4,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import XIcon from '@mui/icons-material/X';
 
-export default function TripInfoCollaboratorCard() {
+export default function TripInfoCollaboratorCard({ description }: any) {
   return (
     <>
       <div className='max-w-sm bg-white bg-opacity-10 border border-gray-200 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 mb-4 overflow-hidden'>
@@ -21,8 +21,10 @@ export default function TripInfoCollaboratorCard() {
             <div>
               <div className='mb-4'>
                 <small className='text-default-400'>
-                  Embark on a breathtaking journey to Mushkpuri with <span className='font-bold'>Ibrahim</span>! Hike,
-                  explore, and capture magical moments together!
+                  {description
+                    ? description
+                    : `Embark on a breathtaking journey to Mushkpuri with Ibrahim! Hike,
+                  explore, and capture magical moments together!`}
                 </small>
               </div>
               <div className='mb-1 flex flex-wrap'>

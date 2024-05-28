@@ -5,7 +5,7 @@ import TripInfoCollaboratorCard from '../Components/TripInfoCollaboratorCard';
 import DirectionsBusIcon from '@mui/icons-material/DirectionsBus';
 import GalleryImage from '../Components/GalleryImage';
 
-const page = () => {
+const TripInfo = () => {
   return (
     <>
       <section className='py-10'>
@@ -121,4 +121,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default TripInfo;
