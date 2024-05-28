@@ -37,3 +37,20 @@
   flex-direction: column;
 }
 
+.timeline-line {
+  position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, #f8f8f800 50%, #ccc 50%);
+    background-size: 2px 20px;
+    background-repeat: repeat-y;
+    z-index: 0;
+    margin: -20px;
+}
+
+.timeline-container {
+  position: relative;
+  padding: 20px;
+}
