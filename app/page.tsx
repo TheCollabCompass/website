@@ -1,11 +1,12 @@
 import Image from "next/image";
 import MainBar from "./Components/MainNav";
 import { Button } from "@nextui-org/react";
+import LiveTripCard from "./Components/LiveTripCard";
 
 export default function Home() {
   return (
     <>
-      <section className="backgroundImage">
+      <section id="hero-section" className="backgroundImage">
         {/* <MainBar /> */}
 
         <div className="md:container md:mx-auto hero-container ">
@@ -25,12 +26,42 @@ export default function Home() {
                 hustle, our curated trips offer something for everyone.
               </p>
               <div className="mt-2">
-              <Button color="success" variant="shadow">
-                Explore
-              </Button>
+                <Button color="success" variant="shadow">
+                  Explore
+                </Button>
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="explore-section">
+        <div className="container mx-auto">
+          <div className="py-20 px-2">
+            <div className="flex flex-col space-y-24">
+              
+              <div className="flex flex-row items-center justify-center"><h2 className="text-4xl font-bold">Comming Trips</h2></div>
+              <div className="flex flex-row items-center  justify-around flex-wrap">
+                <div>
+                  <LiveTripCard />
+                </div>
+                <div>
+                  <LiveTripCard />
+                </div>
+                <div>
+                  <LiveTripCard />
+                </div>
+                <div>
+                  <LiveTripCard />
+                </div>
+                <div>
+                  <LiveTripCard />
+                </div>
+                <div>
+                  <LiveTripCard />
+                </div>
+              </div>
             </div>
-            
           </div>
         </div>
       </section>

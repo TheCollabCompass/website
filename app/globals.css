@@ -13,29 +13,27 @@
 
 
 .background-main-color {
-  background-color: #14141f;
+  /* background-color: #14141f; */
+  background-color: #031110;
 }
 
 .backgroundImage {
-    /* background-image: url('/assets/images/darkHeroImage.jpg'); */
+    background-image: url('/assets/images/darkHeroImage.jpg');
     /* background-image: url('/assets/images/mainBackground.jpg'); */
-    background-image: url('/assets/images/snow1.jpg');
+    /* background-image: url('/assets/images/snow1.jpg'); */
     background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   height: 100vh;
-  /* width: 100vw; */
-  /* position: absolute; */
-  /* z-index: -1; */
+  
 }
-
 
 .hero-container {
   height: 100%;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
   flex-direction: column;
 }
 
