@@ -24,8 +24,8 @@ const TripInfo = () => {
       </section>
       <section id='package-includes-section'>
         <div className='container mx-auto h-full'>
-          <div className='flex flex-wrap flex-col justify-center items-center'>
-            <div className='my-8 text-4xl font-bold px-2 underline decoration-white'>Package Includes</div>
+          <div className='flex flex-wrap flex-col justify-center'>
+            <div className='my-10 text-4xl font-bold px-2 underline decoration-white'>Package Includes</div>
             <div id='packages-container' className='p-4 w-full'>
               <div className='flex flex-wrap flex-row w-full'>
                 <div className='grid md:grid-cols-2 sm:grid-cols-1 gap-4 w-full'>
@@ -53,8 +53,8 @@ const TripInfo = () => {
       </section>
       <section id='plan-section'>
         <div className='container mx-auto h-full'>
-          <div className='flex flex-wrap flex-col justify-center items-center'>
-            <div className='my-8 text-4xl font-bold px-2 underline decoration-white'>Trip Plan</div>
+          <div className='flex flex-wrap flex-col justify-center '>
+            <div className='my-10 text-4xl font-bold px-2 underline decoration-white'>Trip Plan</div>
             <div id='plan-container' className='p-4 w-full'>
               <div className='flex flex-wrap flex-row w-full timeline-container'>
                 <div className='mb-4  '>
@@ -86,9 +86,26 @@ const TripInfo = () => {
       </div>
 
       <section id='gallery-section'>
-        <div className='container mx-auto py-10 px-2'>
-          <div className='flex flex-wrap flex-col justify-center items-center'>
-            <div className='my-8 text-4xl font-bold px-2 underline decoration-white'>Attractions</div>
+        <div className='container mx-auto  px-2'>
+          <div className='flex flex-wrap flex-col justify-center'>
+            <div className='my-10 text-4xl font-bold px-2 underline decoration-white'>Contact Us</div>
+            <p className='mb-4'>Have questions or need assistance? Reach out to our friendly support team:</p>
+            <ul>
+              <li className='mb-2'>
+                <span className='font-bold'>Email:</span> asn.cs21@gmail.com
+              </li>
+              <li className='mb-2'>
+                <span className='font-bold'>Phone/Whatsapp:</span> +923091045145 / +923350078963
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id='gallery-section'>
+        <div className='container mx-auto px-2'>
+          <div className='flex flex-wrap flex-col justify-center'>
+            <div className='my-10 text-4xl font-bold px-2 underline decoration-white'>Attractions</div>
           </div>
 
           <div className='flex justify-center'>
@@ -113,6 +130,24 @@ const TripInfo = () => {
                   <GalleryImage url='/assets/images/snow1.jpg' imageWidth='500px' imageHeight='500px' alt='tourism' />
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id='gallery-section'>
+        <div className='container mx-auto px-2'>
+          <div className='flex flex-wrap flex-col justify-center'>
+            <div className='my-10 text-4xl font-bold px-2 underline decoration-white'>Join the Adventure!</div>
+          </div>
+
+          <div className='flex justify-center'>
+            <div className='grid md:grid-cols-3 sm:grid-cols-1 gap-4 w-full'>
+              <p>
+                Ready to explore Pakistan like never before? Book your next adventure with "The Collab Compas" and
+                create memories that will last a lifetime. Follow us on social media to stay updated on our latest trips
+                and special offers.
+              </p>
             </div>
           </div>
         </div>
