@@ -3,6 +3,7 @@ import LiveTripCard from '../Components/LiveTripCard';
 import TripInfoTripCard from '../Components/TripInfoTripCard';
 import TripInfoCollaboratorCard from '../Components/TripInfoCollaboratorCard';
 import DirectionsBusIcon from '@mui/icons-material/DirectionsBus';
+import GalleryImage from '../Components/GalleryImage';
 
 const page = () => {
   return (
@@ -67,6 +68,50 @@ const page = () => {
                 </div>
 
                 <div className='timeline-line'></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div id='timeline-notes'>
+        <div className='container mx-auto my-3 '>
+          <div className='mx-2 border-2 border-red-500 p-2 rounded'>
+            <div className='text-red-500 text-lg'>
+              <span className='text-red-500 underline text-lg font-bold'>Note:</span> Timings may vary 2-3 hours due to
+              road and traffic conditions. Karachi people can join us either in Lahore or Islamabad
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section id='gallery-section'>
+        <div className='container mx-auto py-10 px-2'>
+          <div className='flex flex-wrap flex-col justify-center items-center'>
+            <div className='my-8 text-4xl font-bold px-2 underline decoration-white'>Attractions</div>
+          </div>
+
+          <div className='flex justify-center'>
+            <div className='grid md:grid-cols-3 sm:grid-cols-1 gap-4 w-full'>
+              <div className='gallery-column'>
+                <div>
+                  <GalleryImage url='/assets/images/snow1.jpg' imageWidth='500px' imageHeight='500px' alt='tourism' />
+                </div>
+              </div>
+              <div className='gallery-column'>
+                <div>
+                  <GalleryImage
+                    url='/assets/images/mainBackground.jpg'
+                    imageWidth='500px'
+                    imageHeight='500px'
+                    alt='tourism'
+                  />
+                </div>
+              </div>
+              <div className='gallery-column'>
+                <div>
+                  <GalleryImage url='/assets/images/snow1.jpg' imageWidth='500px' imageHeight='500px' alt='tourism' />
+                </div>
               </div>
             </div>
           </div>
