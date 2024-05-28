@@ -28,9 +28,11 @@ export default function Home() {
                 </div>
 
                 <div className='mt-2'>
-                  <Button color='success' variant='shadow'>
-                    Explore
-                  </Button>
+                  <a href='/trip-info'>
+                    <Button color='success' variant='shadow'>
+                      Explore
+                    </Button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -89,7 +91,7 @@ export default function Home() {
           <div className='py-20 px-2'>
             <div className='flex flex-col space-y-24'>
               <div className='flex flex-row items-center justify-center'>
-                <h2 className='my-8 text-4xl font-bold px-2 underline decoration-white'>Coming Soon</h2>
+                <h2 className='my-8 text-4xl font-bold px-2 underline decoration-white'>Completed Trips</h2>
               </div>
               <div className='flex flex-row items-center  justify-around flex-wrap'>
                 <div>
