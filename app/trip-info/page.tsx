@@ -1,5 +1,7 @@
 import React from "react";
 import LiveTripCard from "../Components/LiveTripCard";
+import TripInfoTripCard from "../Components/TripInfoTripCard";
+import TripInfoCollaboratorCard from "../Components/TripInfoCollaboratorCard";
 
 const page = () => {
   return (
@@ -8,8 +10,8 @@ const page = () => {
         <div className="container mx-auto h-full" >
             <div className="h-full flex items-center justify-center m-4" >
                 <div  className="w-full flex flex-wrap justify-around">
-                <div><LiveTripCard /></div>
-                <div><LiveTripCard /></div>
+                <div><TripInfoTripCard /></div>
+                <div><TripInfoCollaboratorCard /></div>
 
                 </div>
             </div>

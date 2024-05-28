@@ -7,8 +7,9 @@ import {
   Button,
   Divider,
 } from "@nextui-org/react";
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
-export default function LiveTripCard() {
+export default function TripInfoTripCard() {
   return (
     <>
       <div className="max-w-sm bg-white bg-opacity-10 border border-gray-200 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 mb-4 overflow-hidden">
@@ -27,11 +28,8 @@ export default function LiveTripCard() {
             </div>
           </div>
           <div className="mt-3">
-            <div className="flex flex-col">
-              <div className="mb-4">
-                <small className="text-default-400">Collborator</small>
-                <p className="font-bold text-lg">Rana Ahsan Ansar</p>
-              </div>
+            <div className="flex flex-row justify-between">
+              
               <div className="mb-4">
                 <small className="text-default-400">Per Person</small>
                 <p className="font-bold text-lg">Rs. 7000/-</p>
@@ -46,10 +44,16 @@ export default function LiveTripCard() {
           <div className="flex flex-row justify-between">
             <a
               href="#"
-              className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 w-full justify-center"
             >
-              Explore
-              <svg
+                <div className="mr-2">
+                <WhatsAppIcon />
+
+                </div>
+
+              Contact On Whatsapp
+              {/* TODO: Replace with Whatsapp Icon  */}
+              {/* <svg
                 className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
@@ -63,29 +67,11 @@ export default function LiveTripCard() {
                   stroke-width="2"
                   d="M1 5h12m0 0L9 1m4 4L9 9"
                 />
-              </svg>
+                
+              </svg> */}
+
             </a>
-            {/* <a
-            href="#"
-            className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-          >
-            Explore
-            <svg
-              className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 14 10"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M1 5h12m0 0L9 1m4 4L9 9"
-              />
-            </svg>
-          </a> */}
+            
           </div>
           
         </div>

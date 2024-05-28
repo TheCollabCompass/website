@@ -11,26 +11,29 @@ export default function Home() {
 
         <div className="md:container md:mx-auto hero-container ">
           <div className="p-2">
-            <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg border border-gray-200 rounded-lg shadow-lg p-8">
-              <div className="text-4xl font-bold">
-                Discover the Majestic Mountains of Pakistan with Influencers You
-                Love
+            <div className="grid md:grid-cols-2 sm:grid-cols-1"> 
+              <div className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg border border-gray-200 rounded-lg shadow-lg p-8">
+              <div>
+                <div className="text-4xl font-bold tracking-wider">
+                Explore Pakistan with Your Favorite Influencers!
+                </div>
+
+                <p className="text-2xl mt-4 tracking-wider font-semibold">
+                Discover the majestic beauty of Pakistan's mountain regions with the influencers you follow and love!
+                </p>
+                <p className="text-1xl mt-2 tracking-wider">
+                Pakistan's First Influencer-Led Tourism Company!
+                </p>
               </div>
 
-              <p className="text-2xl mt-4">
-                Are you ready to embark on the adventure of a lifetime? we
-                specialize in creating unforgettable travel experiences to
-                Pakistan's most stunning mountain destinations, guided by the
-                influencers you love and follow. Whether you're a thrill-seeker,
-                nature enthusiast, or just looking to escape the everyday
-                hustle, our curated trips offer something for everyone.
-              </p>
               <div className="mt-2">
                 <Button color="success" variant="shadow">
                   Explore
                 </Button>
               </div>
             </div>
+            </div>
+            
           </div>
         </div>
       </section>
@@ -39,8 +42,9 @@ export default function Home() {
         <div className="container mx-auto">
           <div className="py-20 px-2">
             <div className="flex flex-col space-y-24">
-              
-              <div className="flex flex-row items-center justify-center"><h2 className="text-4xl font-bold">Comming Trips</h2></div>
+              <div className="flex flex-row items-center justify-center">
+                <h2 className="text-4xl font-bold">Comming Trips</h2>
+              </div>
               <div className="flex flex-row items-center  justify-around flex-wrap">
                 <div>
                   <LiveTripCard />
