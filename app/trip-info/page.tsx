@@ -57,29 +57,15 @@ const page = () => {
             <div id='plan-container' className='p-4 w-full'>
               <div className='flex flex-wrap flex-row w-full timeline-container'>
                 <div className='mb-4  '>
-                  <div className='text-2xl font-semibold'>Day : 0</div>
+                  <div className='text-2xl font-semibold mb-2'>Day : 0</div>
+                  <p className='p-2 bg-white bg-opacity-10 border border-gray-200 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 overflow-hidden mb-2'>
+                    Departure from Thokar or Kalma Chowk terminal at 9:00PM
+                  </p>
                   <p className='p-2 bg-white bg-opacity-10 border border-gray-200 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 overflow-hidden'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, reprehenderit! Cumque, ducimus
-                    architecto aspernatur nam ea labore assumenda natus provident, veniam perspiciatis tempore vero
-                    accusamus, incidunt quisquam iusto quos placeat?
+                    Arrived in Islamabad at 12:00PM
                   </p>
                 </div>
-                <div className='mb-4'>
-                  <div className='text-2xl font-semibold mb-2'>Day : 1</div>
-                  <p className='p-2 bg-white bg-opacity-10 border border-gray-200 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 overflow-hidden'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, reprehenderit! Cumque, ducimus
-                    architecto aspernatur nam ea labore assumenda natus provident, veniam perspiciatis tempore vero
-                    accusamus, incidunt quisquam iusto quos placeat?
-                  </p>
-                </div>
-                <div className='mb-4'>
-                  <div className='text-2xl font-semibold'>Day : 2</div>
-                  <p className='p-2 bg-white bg-opacity-10 border border-gray-200 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 overflow-hidden'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, reprehenderit! Cumque, ducimus
-                    architecto aspernatur nam ea labore assumenda natus provident, veniam perspiciatis tempore vero
-                    accusamus, incidunt quisquam iusto quos placeat?
-                  </p>
-                </div>
+
                 <div className='timeline-line'></div>
               </div>
             </div>
