@@ -54,3 +54,9 @@
   position: relative;
   padding: 20px;
 }
+
+.gallery-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

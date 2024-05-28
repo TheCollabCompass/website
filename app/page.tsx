@@ -2,6 +2,8 @@ import Image from 'next/image';
 import MainBar from './Components/MainNav';
 import { Button } from '@nextui-org/react';
 import LiveTripCard from './Components/LiveTripCard';
+import ComingSoonTripCard from './Components/ComingSoonTripCard';
+import CompletedTripCard from './Components/CompletedTripCard';
 
 export default function Home() {
   return (
@@ -26,9 +28,11 @@ export default function Home() {
                 </div>
 
                 <div className='mt-2'>
-                  <Button color='success' variant='shadow'>
-                    Explore
-                  </Button>
+                  <a href='/trip-info'>
+                    <Button color='success' variant='shadow'>
+                      Explore
+                    </Button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -36,12 +40,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section id='explore-section'>
+      <section id='coming-trips-section'>
         <div className='container mx-auto'>
           <div className='py-20 px-2'>
             <div className='flex flex-col space-y-24'>
               <div className='flex flex-row items-center justify-center'>
-                <h2 className='my-8 text-4xl font-bold px-2 underline decoration-white'>Comming Trips</h2>
+                <h2 className='my-8 text-4xl font-bold px-2 underline decoration-white'>Live Trips</h2>
               </div>
               <div className='flex flex-row items-center  justify-around flex-wrap'>
                 <div>
@@ -53,14 +57,51 @@ export default function Home() {
                 <div>
                   <LiveTripCard />
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id='upcoming-trips-section'>
+        <div className='container mx-auto'>
+          <div className='py-20 px-2'>
+            <div className='flex flex-col space-y-24'>
+              <div className='flex flex-row items-center justify-center'>
+                <h2 className='my-8 text-4xl font-bold px-2 underline decoration-white'>Coming Soon</h2>
+              </div>
+              <div className='flex flex-row items-center  justify-around flex-wrap'>
                 <div>
-                  <LiveTripCard />
+                  <ComingSoonTripCard />
                 </div>
                 <div>
-                  <LiveTripCard />
+                  <ComingSoonTripCard />
                 </div>
                 <div>
-                  <LiveTripCard />
+                  <ComingSoonTripCard />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id='completed-trips-section'>
+        <div className='container mx-auto'>
+          <div className='py-20 px-2'>
+            <div className='flex flex-col space-y-24'>
+              <div className='flex flex-row items-center justify-center'>
+                <h2 className='my-8 text-4xl font-bold px-2 underline decoration-white'>Completed Trips</h2>
+              </div>
+              <div className='flex flex-row items-center  justify-around flex-wrap'>
+                <div>
+                  <CompletedTripCard />
+                </div>
+                <div>
+                  <CompletedTripCard />
+                </div>
+                <div>
+                  <CompletedTripCard />
                 </div>
               </div>
             </div>
