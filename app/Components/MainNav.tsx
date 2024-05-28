@@ -1,50 +1,57 @@
-'use client'
-import React from "react";
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Button} from "@nextui-org/react";
+'use client';
+import React from 'react';
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
+  NavbarMenuToggle,
+  NavbarMenu,
+  NavbarMenuItem,
+  Link,
+  Button,
+} from '@nextui-org/react';
 // import {AcmeLogo} from "./AcmeLogo.jsx";
 
 export default function MainBar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const menuItems = [
-    "Profile",
-    "Dashboard",
-    "Activity",
-    "Analytics",
-    "System",
-    "Deployments",
-    "My Settings",
-    "Team Settings",
-    "Help & Feedback",
-    "Log Out",
+    'Profile',
+    'Dashboard',
+    'Activity',
+    'Analytics',
+    'System',
+    'Deployments',
+    'My Settings',
+    'Team Settings',
+    'Help & Feedback',
+    'Log Out',
   ];
 
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent>
-        <NavbarMenuToggle
-          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidden"
-        />
+        <NavbarMenuToggle aria-label={isMenuOpen ? 'Close menu' : 'Open menu'} className='sm:hidden' />
         <NavbarBrand>
           {/* <AcmeLogo /> */}
-          <p className="font-bold text-black ">The Collab Compass</p>
+          <p className='font-bold text-black '>The Collab Compass</p>
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      <NavbarContent className='hidden sm:flex gap-4' justify='center'>
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link color='foreground' href='/'>
             Home
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="#" aria-current="page">
+          <Link href='#' aria-current='page'>
             Customers
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link color='foreground' href='#'>
             Integrations
           </Link>
         </NavbarItem>
@@ -63,12 +70,10 @@ export default function MainBar() {
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
-              color={
-                index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
-              }
-              className="w-full"
-              href="#"
-              size="lg"
+              color={index === 2 ? 'primary' : index === menuItems.length - 1 ? 'danger' : 'foreground'}
+              className='w-full'
+              href='#'
+              size='lg'
             >
               {item}
             </Link>

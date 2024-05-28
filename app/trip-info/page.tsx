@@ -75,7 +75,7 @@ const TripInfo = () => {
       </section>
 
       <div id='timeline-notes'>
-        <div className='container mx-auto my-3 '>
+        <div className='container mx-auto my-10'>
           <div className='mx-2 border-2 border-red-500 p-2 rounded'>
             <div className='text-red-500 text-lg'>
               <span className='text-red-500 underline text-lg font-bold'>Note:</span> Timings may vary 2-3 hours due to

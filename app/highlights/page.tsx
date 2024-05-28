@@ -24,9 +24,9 @@ const Highlights = () => {
           <div className='flex flex-wrap flex-col justify-center items-center'>
             <div className='my-8 text-4xl font-bold px-2 underline decoration-white'>Highlights of the Tour</div>
             <div className='w-full flex flex-row justify-start'>
-              <div className='my-8 ml-2 text-small font-bold px-2 underline decoration-white'>
+              {/* <div className='my-8 ml-2 text-small font-bold px-2 underline decoration-white'>
                 <a href=''>View All</a>
-              </div>
+              </div> */}
             </div>
 
             <div id='packages-container' className='p-4 w-full'>
