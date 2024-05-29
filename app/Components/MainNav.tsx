@@ -30,8 +30,8 @@ export default function MainBar() {
   ];
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen}>
-      <NavbarContent>
+    <Navbar  onMenuOpenChange={setIsMenuOpen} className='sticky'>
+      <NavbarContent >
         <NavbarMenuToggle aria-label={isMenuOpen ? 'Close menu' : 'Open menu'} className='sm:hidden' />
         <NavbarBrand>
           {/* <AcmeLogo /> */}

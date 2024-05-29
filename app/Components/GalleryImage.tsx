@@ -9,5 +9,9 @@ export interface GalleryImageProps {
 }
 
 export default function GalleryImage({ url, imageWidth, imageHeight, alt }: GalleryImageProps) {
-  return <Image isZoomed width={imageWidth} height={imageHeight} alt={alt} src={url} />;
+  return <Image isZoomed isBlurred  alt={alt} src={url} classNames={
+    {
+      img:`w-[500px] h-[500px]`,
+    }
+  } />;
 }

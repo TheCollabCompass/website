@@ -7,10 +7,10 @@ import logoImage from '@/public/assets/images/logo.png';
 const FooterUI = () => {
   return (
     <>
-      <footer className='p-5'>
-        <hr className='my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8' />
+      <footer className='p-5  bg-black/30'>
+        <hr className='my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8'  />
 
-        <div className='grid grid-cols-3 justify-around w-full mb-5 '>
+        <div className='grid md:grid-cols-3 gap-6 justify-around w-full mb-5 sm:grid-col-1  '>
           <div className='flex flex-col justify-between items-center align-middle gap-5'>
             <Image src={logoImage.src} width={250} height={250} />
             <div className='flex mt-4 sm:justify-center sm:mt-0 items-center'>

@@ -12,7 +12,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 export default function TripInfoTripCard() {
   return (
     <>
-      <div className="max-w-sm bg-white bg-opacity-10 border border-gray-200 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 mb-4 overflow-hidden">
+      <div className="max-w-sm  bg-white/20 backdrop-blur  rounded-2xl shadow-lg shadow-black/30  mb-4 overflow-hidden">
         <a href="#">
           <img className="rounded-t-lg" src="/assets/images/snow1.jpg" alt="" />
         </a>

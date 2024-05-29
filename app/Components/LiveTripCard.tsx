@@ -5,7 +5,7 @@ import LockIcon from '@mui/icons-material/Lock';
 export default function LiveTripCard() {
   return (
     <>
-      <div className='max-w-sm backdrop-brightness-200 bg-transparent  rounded-2xl shadow-lg shadow-white/30  mb-4 overflow-hidden'>
+      <div className='max-w-sm  bg-white/20 backdrop-blur  rounded-2xl shadow-lg shadow-black/30  mb-4 overflow-hidden'>
         <a href='#'>
           <img className='rounded-t-lg' src='/assets/images/snow1.jpg' alt='' />
         </a>

@@ -96,12 +96,12 @@ const TripInfo = () => {
 
           <div className='flex justify-center'>
             <div className='grid md:grid-cols-3 sm:grid-cols-1 gap-4 w-full'>
-              <div className='gallery-column'>
-                <div>
+              <div className='gallery-column overflow-visible'>
+                <div className='overflow-visible'>
                   <GalleryImage url='/assets/images/snow1.jpg' imageWidth='500px' imageHeight='500px' alt='tourism' />
                 </div>
               </div>
-              <div className='gallery-column'>
+              <div className='gallery-column overflow-visible'>
                 <div>
                   <GalleryImage
                     url='/assets/images/mainBackground.jpg'
@@ -111,7 +111,7 @@ const TripInfo = () => {
                   />
                 </div>
               </div>
-              <div className='gallery-column'>
+              <div className='gallery-column overflow-visible'>
                 <div>
                   <GalleryImage url='/assets/images/snow1.jpg' imageWidth='500px' imageHeight='500px' alt='tourism' />
                 </div>

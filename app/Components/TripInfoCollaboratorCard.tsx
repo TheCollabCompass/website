@@ -7,7 +7,7 @@ import XIcon from '@mui/icons-material/X';
 export default function TripInfoCollaboratorCard({ description }: any) {
   return (
     <>
-      <div className='max-w-sm bg-white bg-opacity-10 border border-gray-200 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 mb-4 overflow-hidden'>
+      <div className='max-w-sm bg-black bg-opacity-30 rounded-lg shadow-white/30 shadow-lg mb-4 overflow-hidden'>
         <a href='#'>
           <img className='rounded-t-lg' src='/assets/images/boy1.png' alt='' />
         </a>

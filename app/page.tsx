@@ -15,7 +15,7 @@ export default function Home() {
         <div className='md:container md:mx-auto hero-container '>
           <div className='p-2'>
             <div className='grid md:grid-cols-2 sm:grid-cols-1'>
-              <div className='bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg border border-gray-200 rounded-lg shadow-lg p-8'>
+              <div className='bg-white/10 backdrop-blur rounded-xl shadow-[#1c2418] backdrop-brightness-150 shadow-2xl p-12'>
                 <div>
                   <div className='text-4xl font-bold tracking-wider'>
                     Explore Pakistan with Your Favorite Influencers!
@@ -46,7 +46,7 @@ export default function Home() {
           <div className='py-20 px-2'>
             <div className='flex flex-col space-y-24'>
               <div className='flex flex-row items-center justify-center'>
-                <h2 className='my-8 text-4xl font-bold px-2 underline decoration-white'>Live Trips</h2>
+                <h2 className=' text-5xl font-bold px-2 text-white'>Live Trips</h2>
               </div>
               <div className='flex flex-row items-center  justify-around flex-wrap'>
                 <div>
@@ -69,7 +69,7 @@ export default function Home() {
           <div className='py-20 px-2'>
             <div className='flex flex-col space-y-24'>
               <div className='flex flex-row items-center justify-center'>
-                <h2 className='my-8 text-4xl font-bold px-2 underline decoration-white'>Coming Soon</h2>
+                <h2 className=' text-5xl font-bold px-2 text-white '>Coming Soon</h2>
               </div>
               <div className='flex flex-row items-center  justify-around flex-wrap'>
                 <div>
@@ -92,7 +92,7 @@ export default function Home() {
           <div className='py-20 px-2'>
             <div className='flex flex-col space-y-24'>
               <div className='flex flex-row items-center justify-center'>
-                <h2 className='my-8 text-4xl font-bold px-2 underline decoration-white'>Completed Trips</h2>
+                <h2 className='text-5xl font-bold px-2 text-white '>Completed Trips</h2>
               </div>
               <div className='flex flex-row items-center  justify-around flex-wrap'>
                 <div>

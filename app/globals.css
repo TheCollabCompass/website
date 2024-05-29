@@ -13,18 +13,17 @@
 
 
 .background-main-color {
-  /* background-color: #14141f; */
-  background-color: #031110;
+  background-image: url('/assets/images/bg-main.webp');
+  /* background-image: url('/assets/images/mainBackground.jpg'); */
+  /* background-image: url('/assets/images/snow1.jpg'); */
+  background-repeat: no-repeat;
+ background-size: cover;
+background-position: center;
+background-attachment: fixed;
 }
 
 .backgroundImage {
-    background-image: url('/assets/images/darkHeroImage.jpg');
-    /* background-image: url('/assets/images/mainBackground.jpg'); */
-    /* background-image: url('/assets/images/snow1.jpg'); */
-    background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  
   height: 100vh;
   
 }
