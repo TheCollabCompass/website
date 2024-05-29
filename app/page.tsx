@@ -4,6 +4,7 @@ import { Button } from '@nextui-org/react';
 import LiveTripCard from './Components/LiveTripCard';
 import ComingSoonTripCard from './Components/ComingSoonTripCard';
 import CompletedTripCard from './Components/CompletedTripCard';
+import ContactUs from './Components/ContactUs';
 
 export default function Home() {
   return (
@@ -108,6 +109,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <ContactUs />
     </>
   );
 }

@@ -1,4 +1,5 @@
 import { title } from 'process';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 export const WhyTravelData = [
   {
@@ -22,8 +23,7 @@ export const WhyTravelData = [
       'Whether you’re a seasoned trekker or a casual traveler, we have trips designed to cater to all levels of adventure and comfort.',
   },
 ];
-
-export const HowItWorksData = [
+export const HowItWorksData: any = [
   {
     sr: '1',
     title: 'Choose Your Trip:',
