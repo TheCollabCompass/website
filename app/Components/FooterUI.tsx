@@ -2,13 +2,13 @@ import { Instagram } from '@mui/icons-material';
 import { Image } from '@nextui-org/react';
 import React from 'react';
 import ContactUs from './ContactUs';
-import logoImage from '@/public/assets/images/logo.png';
+import logoImage from '@/public/assets/images/theCollabCompassLogoDark.png';
 
 const FooterUI = () => {
   return (
     <>
       <footer className='p-5  bg-black/30'>
-        <hr className='my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8'  />
+        <hr className='my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8' />
 
         <div className='grid md:grid-cols-3 gap-6 justify-around w-full mb-5 sm:grid-col-1  '>
           <div className='flex flex-col justify-between items-center align-middle gap-5'>

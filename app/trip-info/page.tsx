@@ -77,9 +77,9 @@ const TripInfo = () => {
 
       <div id='timeline-notes'>
         <div className='container mx-auto my-10'>
-          <div className='mx-2 border-2 border-red-500 p-2 rounded'>
-            <div className='text-red-500 text-lg'>
-              <span className='text-red-500 underline text-lg font-bold'>Note:</span> Timings may vary 2-3 hours due to
+          <div className='p-2 bg-white bg-opacity-10 border border-red-500 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 overflow-hidden mb-2'>
+            <div className='text-white text-lg'>
+              <span className='text-white underline text-lg font-bold'>Note:</span> Timings may vary 2-3 hours due to
               road and traffic conditions. Karachi people can join us either in Lahore or Islamabad
             </div>
           </div>
