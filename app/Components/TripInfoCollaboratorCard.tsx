@@ -3,32 +3,31 @@ import { Card, CardHeader, CardBody, Image, Button, Divider } from '@nextui-org/
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import XIcon from '@mui/icons-material/X';
+import { ITripInfo } from '../utils/types';
 
-export default function TripInfoCollaboratorCard({ description }: any) {
+export default function TripInfoCollaboratorCard({ data }: { data?: ITripInfo }) {
   return (
     <>
       <div className='max-w-sm bg-black bg-opacity-30 rounded-lg shadow-white/30 shadow-lg mb-4 overflow-hidden'>
         <a href='#'>
-          <img className='rounded-t-lg' src='/assets/images/boy1.png' alt='' />
+          <img className='rounded-t-lg' src={data?.collaboratorCard.image} alt='' />
         </a>
         <div className='p-5'>
           <small className='text-default-400'>Collaborator</small>
           <a href='#'>
-            <h5 className='mb-2 text-2xl font-bold tracking-tight text-white'>Muhammad Ibrahim</h5>
+            <h5 className='mb-2 text-2xl font-bold tracking-tight text-white'>{data?.collaboratorCard.name}</h5>
           </a>
 
           <div className='mt-3'>
             <div>
               <div className='mb-4'>
                 <small className='text-default-400'>
-                  {description
-                    ? description
-                    : `Embark on a breathtaking journey to Mushkpuri with Ibrahim! Hike,
-                  explore, and capture magical moments together!`}
+                  {data?.collaboratorCard.description && data?.collaboratorCard.description}
                 </small>
               </div>
               <div className='mb-1 flex flex-wrap'>
                 <div className='mr-4'>
+                  {/* TDOD: add link tag for these */}
                   <InstagramIcon fontSize='large' />
                 </div>
 

@@ -1,12 +1,16 @@
 import React from 'react';
-import LiveTripCard from '../Components/LiveTripCard';
-import TripInfoTripCard from '../Components/TripInfoTripCard';
-import TripInfoCollaboratorCard from '../Components/TripInfoCollaboratorCard';
+import LiveTripCard from '../../Components/LiveTripCard';
+import TripInfoTripCard from '../../Components/TripInfoTripCard';
+import TripInfoCollaboratorCard from '../../Components/TripInfoCollaboratorCard';
 import DirectionsBusIcon from '@mui/icons-material/DirectionsBus';
-import GalleryImage from '../Components/GalleryImage';
-import ContactUs from '../Components/ContactUs';
+import GalleryImage from '../../Components/GalleryImage';
+import ContactUs from '../../Components/ContactUs';
+import { StartSvg } from '../../Constants/svgIcons';
+import { tripInfoPageData } from '../../Constants/data';
+import { ITripInfo } from '@/app/utils/types';
 
-const TripInfo = () => {
+const TripInfo = ({ params }: { params: { tripId: string } }) => {
+  const data: ITripInfo = tripInfoPageData[params.tripId];
   return (
     <>
       <section className='py-10'>
@@ -14,10 +18,10 @@ const TripInfo = () => {
           <div className='h-full flex items-center justify-center m-4'>
             <div className='w-full flex flex-wrap justify-around'>
               <div>
-                <TripInfoTripCard />
+                <TripInfoTripCard data={data} />
               </div>
               <div>
-                <TripInfoCollaboratorCard />
+                <TripInfoCollaboratorCard data={data} />
               </div>
             </div>
           </div>
@@ -26,26 +30,18 @@ const TripInfo = () => {
       <section id='package-includes-section'>
         <div className='container mx-auto h-full'>
           <div className='flex flex-wrap flex-col justify-center'>
-            <div className='my-10 text-4xl font-bold px-2 underline decoration-white'>Package Includes</div>
+            <div className='flex flex-row items-center justify-center'>
+              <div className=' text-5xl font-bold px-2 text-white my-10'>Package Includes</div>
+            </div>
             <div id='packages-container' className='p-4 w-full'>
               <div className='flex flex-wrap flex-row w-full'>
                 <div className='grid md:grid-cols-2 sm:grid-cols-1 gap-4 w-full'>
-                  <div className='flex flex-row items-center justify-center mb-2'>
-                    <DirectionsBusIcon style={{ fontSize: '5rem', color: 'white' }} className='mr-2' />
-                    <div className='text-2xl font-semibold '>Luxury Transport</div>
-                  </div>
-                  <div className='flex flex-row items-center justify-center mb-2'>
-                    <DirectionsBusIcon style={{ fontSize: '5rem', color: 'white' }} className='mr-2' />
-                    <div className='text-2xl font-semibold '>Luxury Transport</div>
-                  </div>
-                  <div className='flex flex-row items-center justify-center mb-2'>
-                    <DirectionsBusIcon style={{ fontSize: '5rem', color: 'white' }} className='mr-2' />
-                    <div className='text-2xl font-semibold '>Luxury Transport</div>
-                  </div>
-                  <div className='flex flex-row items-center justify-center mb-2'>
-                    <DirectionsBusIcon style={{ fontSize: '5rem', color: 'white' }} className='mr-2' />
-                    <div className='text-2xl font-semibold '>Luxury Transport</div>
-                  </div>
+                  {data.package.map((item, index) => (
+                    <div key={index} className='flex flex-row items-center justify-start mb-2'>
+                      {StartSvg()}
+                      <div className='text-2xl font-semibold ml-2'>{item}</div>
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
@@ -55,17 +51,22 @@ const TripInfo = () => {
       <section id='plan-section'>
         <div className='container mx-auto h-full'>
           <div className='flex flex-wrap flex-col justify-center '>
-            <div className='my-10 text-4xl font-bold px-2 underline decoration-white'>Trip Plan</div>
+            <div className='flex flex-row items-center justify-center'>
+              <div className=' text-5xl font-bold px-2 text-white my-10'>Trip Plan</div>
+            </div>
             <div id='plan-container' className='p-4 w-full'>
               <div className='flex flex-wrap flex-row w-full timeline-container'>
                 <div className='mb-4  '>
-                  <div className='text-2xl font-semibold mb-2'>Day : 0</div>
-                  <p className='p-2 bg-white bg-opacity-10 border border-gray-200 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 overflow-hidden mb-2'>
-                    Departure from Thokar or Kalma Chowk terminal at 9:00PM
-                  </p>
-                  <p className='p-2 bg-white bg-opacity-10 border border-gray-200 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 overflow-hidden'>
-                    Arrived in Islamabad at 12:00PM
-                  </p>
+                  {data.plan.map((item, index) => (
+                    <div className='mb-4'>
+                      <div className='text-2xl font-semibold mb-2'>Day : {item.day}</div>
+                      {item.events.map((event, index) => (
+                        <p className='p-2 bg-white bg-opacity-10 border border-gray-200 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 overflow-hidden mb-2'>
+                          {event}
+                        </p>
+                      ))}
+                    </div>
+                  ))}
                 </div>
 
                 <div className='timeline-line'></div>
@@ -96,26 +97,13 @@ const TripInfo = () => {
 
           <div className='flex justify-center'>
             <div className='grid md:grid-cols-3 sm:grid-cols-1 gap-4 w-full'>
-              <div className='gallery-column overflow-visible'>
-                <div className='overflow-visible'>
-                  <GalleryImage url='/assets/images/snow1.jpg' imageWidth='500px' imageHeight='500px' alt='tourism' />
+              {data.attractions.map((item, index) => (
+                <div className='gallery-column overflow-visible'>
+                  <div className='overflow-visible'>
+                    <GalleryImage url={item} imageWidth='500px' imageHeight='500px' alt='tourism' />
+                  </div>
                 </div>
-              </div>
-              <div className='gallery-column overflow-visible'>
-                <div>
-                  <GalleryImage
-                    url='/assets/images/mainBackground.jpg'
-                    imageWidth='500px'
-                    imageHeight='500px'
-                    alt='tourism'
-                  />
-                </div>
-              </div>
-              <div className='gallery-column overflow-visible'>
-                <div>
-                  <GalleryImage url='/assets/images/snow1.jpg' imageWidth='500px' imageHeight='500px' alt='tourism' />
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>

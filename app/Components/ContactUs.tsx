@@ -6,7 +6,9 @@ const ContactUs = () => {
     <section>
       <div className='container mx-auto  px-2'>
         <div className='flex flex-wrap flex-col justify-center'>
-          <div className='my-10 text-4xl font-bold px-2 underline decoration-white'>Contact Us</div>
+          <div className='flex flex-row items-center justify-center'>
+            <div className=' text-5xl font-bold px-2 text-white my-10'>Contact Us</div>
+          </div>
           <p className='mb-4'>Have questions or need assistance? Reach out to our friendly support team:</p>
           <ul className='mb-4'>
             <li className='mb-2'>
