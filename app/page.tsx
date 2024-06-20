@@ -6,6 +6,8 @@ import ComingSoonTripCard from './Components/ComingSoonTripCard';
 import CompletedTripCard from './Components/CompletedTripCard';
 import ContactUs from './Components/ContactUs';
 import { Instagram } from '@mui/icons-material';
+import { liveTripCardData, comingSoonTripCardData, completedTripCardData } from './Constants/data';
+import { IComingSoonTripData, ICompletedTripData, ILiveTripData } from './utils/types';
 
 export default function Home() {
   return (
@@ -105,15 +107,13 @@ export default function Home() {
                 <h2 className=' text-5xl font-bold px-2 text-white'>Live Trips</h2>
               </div>
               <div className='flex flex-row items-center  justify-around flex-wrap'>
-                <div>
-                  <LiveTripCard />
-                </div>
-                <div>
-                  <LiveTripCard />
-                </div>
-                <div>
-                  <LiveTripCard />
-                </div>
+                {liveTripCardData.map((data: ILiveTripData) => {
+                  return (
+                    <div>
+                      <LiveTripCard data={data} />
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>
@@ -128,15 +128,13 @@ export default function Home() {
                 <h2 className=' text-5xl font-bold px-2 text-white '>Coming Soon</h2>
               </div>
               <div className='flex flex-row items-center  justify-around flex-wrap'>
-                <div>
-                  <ComingSoonTripCard />
-                </div>
-                <div>
-                  <ComingSoonTripCard />
-                </div>
-                <div>
-                  <ComingSoonTripCard />
-                </div>
+                {comingSoonTripCardData.map((data: IComingSoonTripData) => {
+                  return (
+                    <div>
+                      <ComingSoonTripCard data={data} />
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>
@@ -151,15 +149,13 @@ export default function Home() {
                 <h2 className='text-5xl font-bold px-2 text-white '>Completed Trips</h2>
               </div>
               <div className='flex flex-row items-center  justify-around flex-wrap'>
-                <div>
-                  <CompletedTripCard />
-                </div>
-                <div>
-                  <CompletedTripCard />
-                </div>
-                <div>
-                  <CompletedTripCard />
-                </div>
+                {completedTripCardData.map((data: ICompletedTripData) => {
+                  return (
+                    <div>
+                      <CompletedTripCard data={data} />
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>

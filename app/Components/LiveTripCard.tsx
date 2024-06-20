@@ -2,16 +2,17 @@ import React from 'react';
 import { Card, CardHeader, CardBody, Image, Button, Divider } from '@nextui-org/react';
 import HowToRegIcon from '@mui/icons-material/HowToReg';
 import LockIcon from '@mui/icons-material/Lock';
-export default function LiveTripCard() {
+import { ILiveTripData } from '../utils/types';
+export default function LiveTripCard({ data }: { data?: ILiveTripData }) {
   return (
     <>
       <div className='max-w-sm  bg-white/20 backdrop-blur  rounded-2xl shadow-lg shadow-black/30  mb-4 overflow-hidden'>
         <a href='#'>
-          <img className='rounded-t-lg' src='/assets/images/snow1.jpg' alt='' />
+          <img className='rounded-t-lg' src={data?.image} alt='' />
         </a>
         <div className='p-5'>
           <a href='#'>
-            <h5 className='mb-2 text-2xl font-bold tracking-tight text-white'>1 Day Trip to Mushkpuri Top</h5>
+            <h5 className='mb-2 text-2xl font-bold tracking-tight text-white'>{data?.title}</h5>
           </a>
           <div className='flex'>
             <div className='border-2 border-green-500 rounded-lg flex justify-center items-center'>
@@ -23,15 +24,15 @@ export default function LiveTripCard() {
             <div className='flex flex-col'>
               <div className='mb-4'>
                 <small className='text-default-400'>Collborator</small>
-                <p className='font-bold text-lg'>Rana Ahsan Ansar</p>
+                <p className='font-bold text-lg'>{data?.collaborator}</p>
               </div>
               <div className='mb-4'>
                 <small className='text-default-400'>Per Person</small>
-                <p className='font-bold text-lg'>Rs. 7000/-</p>
+                <p className='font-bold text-lg'>Rs. {data?.price}/-</p>
               </div>
               <div className='mb-4'>
                 <small className='text-default-400'>Date</small>
-                <p className='font-bold text-lg'>3rd May, 2024</p>
+                <p className='font-bold text-lg'>{data?.date}</p>
               </div>
             </div>
           </div>

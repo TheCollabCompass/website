@@ -1,16 +1,17 @@
 import React from 'react';
 import HourglassTopIcon from '@mui/icons-material/HourglassTop';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-const ComingSoonTripCard = () => {
+import { IComingSoonTripData } from '../utils/types';
+const ComingSoonTripCard = ({ data }: { data?: IComingSoonTripData }) => {
   return (
     <>
       <div className='max-w-sm  bg-white/20 backdrop-blur  rounded-2xl shadow-lg shadow-black/30  mb-4 overflow-hidden'>
         <a href='#'>
-          <img className='rounded-t-lg' src='/assets/images/snow1.jpg' alt='' />
+          <img className='rounded-t-lg' src={data?.image} alt='' />
         </a>
         <div className='p-5'>
           <a href='#'>
-            <h5 className='mb-2 text-2xl font-bold tracking-tight text-white'>1 Day Trip to Mushkpuri Top</h5>
+            <h5 className='mb-2 text-2xl font-bold tracking-tight text-white'>{data?.title}</h5>
           </a>
           <div className='flex'>
             <div className='border-2 border-blue-500 rounded-lg flex justify-center items-center'>
@@ -22,12 +23,12 @@ const ComingSoonTripCard = () => {
             <div className='flex flex-col'>
               <div className='mb-4'>
                 <small className='text-default-400'>Collborator</small>
-                <p className='font-bold text-lg'>Rana Ahsan Ansar</p>
+                <p className='font-bold text-lg'>{data?.collaborator}</p>
               </div>
 
               <div className='mb-4'>
                 <small className='text-default-400'>Expected Date</small>
-                <p className='font-bold text-lg'>3rd May, 2024</p>
+                <p className='font-bold text-lg'>{data?.date}</p>
               </div>
             </div>
           </div>
