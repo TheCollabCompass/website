@@ -3,6 +3,7 @@ import { Image } from '@nextui-org/react';
 import React from 'react';
 import ContactUs from './ContactUs';
 import logoImage from '@/public/assets/images/theCollabCompassLogoDark.png';
+import { LogoSvg } from '../Constants/svgIcons';
 
 const FooterUI = () => {
   return (
@@ -12,7 +13,8 @@ const FooterUI = () => {
 
         <div className='grid md:grid-cols-3 gap-6 justify-around w-full mb-5 sm:grid-col-1  '>
           <div className='flex flex-col justify-between items-center align-middle gap-5'>
-            <Image src={logoImage.src} width={250} height={250} />
+            {/* <Image src={logoImage.src} width={250} height={250} /> */}
+            {LogoSvg({ width: '250px', height: '250px', color: 'white' })}
             <div className='flex mt-4 sm:justify-center sm:mt-0 items-center'>
               <a href='#' className='text-gray-500 hover:text-gray-900 dark:hover:text-white'>
                 <svg
@@ -99,7 +101,7 @@ const FooterUI = () => {
           </div>
         </div>
         <div className='sm:flex sm:items-center sm:justify-center'>
-          <span className='text-sm text-gray-500 sm:text-center dark:text-gray-400'>
+          <span className='text-sm sm:text-center  text-white'>
             © 2024{' '}
             <a href='https://flowbite.com/' className='hover:underline'>
               The Collab Compass™

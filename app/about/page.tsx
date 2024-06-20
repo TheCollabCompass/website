@@ -9,7 +9,9 @@ const About = () => {
       <div className='container mx-auto'>
         <div id='about-us' className='w-full'>
           <div className='flex flex-wrap flex-col justify-start mb-10 px-2'>
-            <div className='my-8 text-4xl font-bold underline decoration-white'>About Us</div>
+            <div className='flex flex-row items-center justify-center'>
+              <div className=' text-5xl font-bold px-2 text-white my-10'>About Us</div>
+            </div>
             <p className='tracking-wider'>
               At The Collab Compas, we bring a unique twist to your travel adventures. We are proud to be Pakistan's
               first travel agency that organizes exclusive trips to breathtaking mountain areas with the influencers you
@@ -19,7 +21,9 @@ const About = () => {
           </div>
 
           <div className='flex flex-wrap flex-col justify-start mb-10 px-2'>
-            <div className='my-8 text-4xl font-bold underline decoration-white'>Why Travel with Us?</div>
+            <div className='flex flex-row items-center justify-center'>
+              <div className=' text-5xl font-bold px-2 text-white my-10'>Why Travel with Us?</div>
+            </div>
 
             <div className='w-full grid md:grid-cols-3 gap-3 sm:grid-cols-3 justify-center'>
               {WhyTravelData.map((data) => (
@@ -29,10 +33,12 @@ const About = () => {
           </div>
 
           <div className='flex flex-wrap flex-col justify-start mb-10 px-2'>
-            <div className='my-8 text-4xl font-bold underline decoration-white'>How It Works?</div>
+            <div className='flex flex-row items-center justify-center'>
+              <div className=' text-5xl font-bold px-2 text-white my-10'>How It Works?</div>
+            </div>
 
             <div className='w-full grid md:grid-cols-3 gap-3 sm:grid-cols-3 justify-center'>
-              {HowItWorksData.map((data) => (
+              {HowItWorksData.map((data: any) => (
                 <HowItWorkItem key={data.title} {...data} />
               ))}
             </div>

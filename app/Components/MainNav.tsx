@@ -11,6 +11,7 @@ import {
   Link,
   Button,
 } from '@nextui-org/react';
+import { LogoSvg } from '../Constants/svgIcons';
 // import {AcmeLogo} from "./AcmeLogo.jsx";
 
 export default function MainBar() {
@@ -30,11 +31,12 @@ export default function MainBar() {
   ];
 
   return (
-    <Navbar  onMenuOpenChange={setIsMenuOpen} className='sticky'>
-      <NavbarContent >
+    <Navbar onMenuOpenChange={setIsMenuOpen} className='sticky'>
+      <NavbarContent>
         <NavbarMenuToggle aria-label={isMenuOpen ? 'Close menu' : 'Open menu'} className='sm:hidden' />
         <NavbarBrand>
           {/* <AcmeLogo /> */}
+          {LogoSvg({ width: '100px', height: '100px', color: 'black' })}
           <p className='font-bold text-black '>The Collab Compass</p>
         </NavbarBrand>
       </NavbarContent>
@@ -46,7 +48,7 @@ export default function MainBar() {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href='#' aria-current='page'>
+          <Link href='/about' aria-current='page'>
             Customers
           </Link>
         </NavbarItem>
