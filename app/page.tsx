@@ -106,7 +106,7 @@ export default function Home() {
               <div className='flex flex-row items-center justify-center'>
                 <h2 className=' text-5xl font-bold px-2 text-white'>Live Trips</h2>
               </div>
-              <div className='flex flex-row items-center  justify-around flex-wrap'>
+              <div className='grid md:grid-cols-3 lg:grid-cols-3 sm:grid-cols-1 gap-6'>
                 {liveTripCardData.map((data: ILiveTripData) => {
                   return (
                     <div>
@@ -127,7 +127,7 @@ export default function Home() {
               <div className='flex flex-row items-center justify-center'>
                 <h2 className=' text-5xl font-bold px-2 text-white '>Coming Soon</h2>
               </div>
-              <div className='flex flex-row items-center  justify-around flex-wrap'>
+              <div className='grid md:grid-cols-3 lg:grid-cols-3 sm:grid-cols-1 gap-6'>
                 {comingSoonTripCardData.map((data: IComingSoonTripData) => {
                   return (
                     <div>
@@ -148,7 +148,7 @@ export default function Home() {
               <div className='flex flex-row items-center justify-center'>
                 <h2 className='text-5xl font-bold px-2 text-white '>Completed Trips</h2>
               </div>
-              <div className='flex flex-row items-center  justify-around flex-wrap'>
+              <div className='grid md:grid-cols-3 lg:grid-cols-3 sm:grid-cols-1 gap-6'>
                 {completedTripCardData.map((data: ICompletedTripData) => {
                   return (
                     <div>

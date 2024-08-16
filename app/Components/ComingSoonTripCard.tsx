@@ -9,7 +9,7 @@ const ComingSoonTripCard = ({ data }: { data?: IComingSoonTripData }) => {
   return (
     <>
       <Card
-        className='max-w-sm min-w-sm w-[550px]  bg-white/20 backdrop-blur  rounded-2xl shadow-lg shadow-black/30  mb-4 overflow-hidden'
+        className=' w-full bg-white/20 backdrop-blur  rounded-2xl shadow-lg shadow-black/30  mb-4 overflow-hidden'
         shadow='sm'
         key={data?.id}
         // isPressable
@@ -21,12 +21,12 @@ const ComingSoonTripCard = ({ data }: { data?: IComingSoonTripData }) => {
             radius='lg'
             width='100%'
             alt={data?.title}
-            className='w-full  object-cover max-h-[500px] h-[500px]'
+            className='w-full object-cover max-h-[300px] h-[300px] overflow-hidden'
             src={data?.image}
           />
           <div className='p-5'>
             <a href='#'>
-              <h5 className='truncate mb-2 text-2xl font-bold tracking-tight text-white'>{data?.title}</h5>
+              <h5 className='w-full line-clamp-1 mb-2 text-2xl font-bold tracking-tight text-white'>{data?.title}</h5>
             </a>
             <div className='flex'>
               <div className='border-2 border-blue-500 rounded-lg flex justify-center items-center'>
