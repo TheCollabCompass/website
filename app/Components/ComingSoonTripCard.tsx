@@ -37,12 +37,12 @@ const ComingSoonTripCard = ({ data }: { data?: IComingSoonTripData }) => {
             <div className='mt-3'>
               <div className='flex flex-col'>
                 <div className='mb-4'>
-                  <small className='text-default-400'>Collborator</small>
+                  <small className='text-default-300'>Collborator</small>
                   <p className='font-bold text-lg'>{data?.collaborator}</p>
                 </div>
 
                 <div className='mb-4'>
-                  <small className='text-default-400'>Expected Date</small>
+                  <small className='text-default-300'>Expected Date</small>
                   <p className='font-bold text-lg'>{data?.date}</p>
                 </div>
               </div>
