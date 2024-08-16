@@ -47,7 +47,7 @@ export const comingSoonTripCardData: Array<IComingSoonTripData> = [
   },
   {
     id: 's1t2',
-    title: '1 Day Trip to Umberella Water Fall',
+    title: 'Umberella Water Fal, 1 Day',
     collaborator: 'Rana Ahsan Ansar',
     date: '23rd May, 2024',
     image: 'https://images.pexels.com/photos/15286/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600',
