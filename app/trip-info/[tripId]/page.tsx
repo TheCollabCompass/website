@@ -58,10 +58,13 @@ const TripInfo = ({ params }: { params: { tripId: string } }) => {
               <div className='flex flex-wrap flex-row w-full timeline-container'>
                 <div className='mb-4  '>
                   {data.plan.map((item, index) => (
-                    <div className='mb-4'>
+                    <div key={index} className='mb-4'>
                       <div className='text-2xl font-semibold mb-2'>Day : {item.day}</div>
                       {item.events.map((event, index) => (
-                        <p className='p-2 bg-white bg-opacity-10 border border-gray-200 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 overflow-hidden mb-2'>
+                        <p
+                          key={index}
+                          className='p-2 bg-white bg-opacity-10 border border-gray-200 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 overflow-hidden mb-2'
+                        >
                           {event}
                         </p>
                       ))}
@@ -98,8 +101,8 @@ const TripInfo = ({ params }: { params: { tripId: string } }) => {
           <div className='flex justify-center'>
             <div className='grid md:grid-cols-3 sm:grid-cols-1 gap-4 w-full'>
               {data.attractions.map((item, index) => (
-                <div className='gallery-column overflow-visible'>
-                  <div className='overflow-visible'>
+                <div key={index} className='gallery-column overflow-visible'>
+                  <div key={`${index}in1`} className='overflow-visible'>
                     <GalleryImage url={item} imageWidth='500px' imageHeight='500px' alt='tourism' />
                   </div>
                 </div>
@@ -118,9 +121,9 @@ const TripInfo = ({ params }: { params: { tripId: string } }) => {
           <div className='flex justify-center'>
             <div className='grid md:grid-cols-3 sm:grid-cols-1 gap-4 w-full'>
               <p>
-                Ready to explore Pakistan like never before? Book your next adventure with "The Collab Compas" and
-                create memories that will last a lifetime. Follow us on social media to stay updated on our latest trips
-                and special offers.
+                Ready to explore Pakistan like never before? Book your next adventure with The Collab Compas and create
+                memories that will last a lifetime. Follow us on social media to stay updated on our latest trips and
+                special offers.
               </p>
             </div>
           </div>

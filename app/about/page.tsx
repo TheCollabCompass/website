@@ -13,7 +13,7 @@ const About = () => {
               <div className=' text-5xl font-bold px-2 text-white my-10'>About Us</div>
             </div>
             <p className='tracking-wider'>
-              At The Collab Compas, we bring a unique twist to your travel adventures. We are proud to be Pakistan's
+              At The Collab Compas, we bring a unique twist to your travel adventures. We are proud to be Pakistans
               first travel agency that organizes exclusive trips to breathtaking mountain areas with the influencers you
               admire. Our mission is to blend the thrill of exploration with the excitement of meeting and traveling
               with your favorite social media stars.

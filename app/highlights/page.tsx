@@ -4,6 +4,7 @@ import TripInfoTripCard from '../Components/TripInfoTripCard';
 import TripInfoCollaboratorCard from '../Components/TripInfoCollaboratorCard';
 import DirectionsBusIcon from '@mui/icons-material/DirectionsBus';
 import GalleryImage from '../Components/GalleryImage';
+import { tripInfoPageData } from '../Constants/data';
 
 const Highlights = () => {
   return (
@@ -13,7 +14,7 @@ const Highlights = () => {
           <div className='h-full flex items-center justify-center m-4'>
             <div className='w-full flex flex-wrap justify-around'>
               <div>
-                <TripInfoCollaboratorCard description='We are thrilled to announce that our latest adventure to the breathtaking [Mountain Destination] with the beloved [Influencer] has been a tremendous success!' />
+                <TripInfoCollaboratorCard data={tripInfoPageData['s1t1']} />
               </div>
             </div>
           </div>

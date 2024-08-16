@@ -43,7 +43,8 @@ export interface ITripInfo {
   package: string[];
   plan: {
     day: number;
-    events: string[];
+    events: (string | undefined)[];
   }[];
-  attractions: string[];
+  attractions: (string | undefined)[];
+  highlightsImages: (string | undefined)[];
 }

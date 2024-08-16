@@ -8,7 +8,7 @@ export default function TripInfoTripCard({ data }: { data?: ITripInfo }) {
     <>
       <div className='max-w-sm  bg-white/20 backdrop-blur  rounded-2xl shadow-lg shadow-black/30  mb-4 overflow-hidden'>
         <a href='#'>
-          <img className='rounded-t-lg' src={data?.tripCard.image} alt='' />
+          <Image className='rounded-t-lg' src={data?.tripCard.image} alt='' />
         </a>
         <div className='p-5'>
           <a href='#'>

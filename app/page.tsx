@@ -25,19 +25,11 @@ export default function Home() {
                   </div>
 
                   <p className='text-2xl mt-4 tracking-wider font-semibold'>
-                    Discover the majestic beauty of Pakistan's mountain regions with the influencers you follow and
-                    love!
+                    Discover the majestic beauty of Pakistans mountain regions with the influencers you follow and love!
                   </p>
-                  <p className='text-1xl mt-2 tracking-wider'>Pakistan's First Influencer-Led Tourism Company!</p>
+                  <p className='text-1xl mt-2 tracking-wider'>Pakistans First Influencer-Led Tourism Company!</p>
                 </div>
 
-                {/* <div className='my-2'>
-                  <a href='/trip-info'>
-                    <Button color='success' variant='shadow'>
-                      Explore
-                    </Button>
-                  </a>
-                </div> */}
                 <div className='flex sm:mt-0 sm:justify-center md:justify-start items-center'>
                   <a href='#' className='text-gray-500 hover:text-gray-900 dark:hover:text-white'>
                     <svg
@@ -109,7 +101,7 @@ export default function Home() {
               <div className='grid md:grid-cols-3 lg:grid-cols-3 sm:grid-cols-1 gap-6'>
                 {liveTripCardData.map((data: ILiveTripData) => {
                   return (
-                    <div>
+                    <div key={data.id}>
                       <LiveTripCard data={data} />
                     </div>
                   );
@@ -130,7 +122,7 @@ export default function Home() {
               <div className='grid md:grid-cols-3 lg:grid-cols-3 sm:grid-cols-1 gap-6'>
                 {comingSoonTripCardData.map((data: IComingSoonTripData) => {
                   return (
-                    <div>
+                    <div key={data.id}>
                       <ComingSoonTripCard data={data} />
                     </div>
                   );
@@ -151,8 +143,8 @@ export default function Home() {
               <div className='grid md:grid-cols-3 lg:grid-cols-3 sm:grid-cols-1 gap-6'>
                 {completedTripCardData.map((data: ICompletedTripData) => {
                   return (
-                    <div>
-                      <CompletedTripCard data={data} />
+                    <div key={data.id}>
+                      <CompletedTripCard key={data.id} data={data} />
                     </div>
                   );
                 })}

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const HowItWorkItem = (props) => {
+const HowItWorkItem = (props: any) => {
   const { sr, title, description } = props;
   return (
     <div>

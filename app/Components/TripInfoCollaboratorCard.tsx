@@ -5,12 +5,12 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import XIcon from '@mui/icons-material/X';
 import { ITripInfo } from '../utils/types';
 
-export default function TripInfoCollaboratorCard({ data }: { data?: ITripInfo }) {
+export default function TripInfoCollaboratorCard({ data }: { data?: ITripInfo | undefined }) {
   return (
     <>
       <div className='max-w-sm bg-black bg-opacity-30 rounded-lg shadow-white/30 shadow-lg mb-4 overflow-hidden'>
         <a href='#'>
-          <img className='rounded-t-lg' src={data?.collaboratorCard.image} alt='' />
+          <Image className='rounded-t-lg' src={data?.collaboratorCard.image} alt='' />
         </a>
         <div className='p-5'>
           <small className='text-default-400'>Collaborator</small>
