@@ -48,13 +48,11 @@ export default function MainBar() {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href='/about' aria-current='page'>
-            Customers
-          </Link>
+          <Link href='/about'>About</Link>
         </NavbarItem>
         <NavbarItem>
           <Link color='foreground' href='#'>
-            Integrations
+            Whatsapp
           </Link>
         </NavbarItem>
       </NavbarContent>

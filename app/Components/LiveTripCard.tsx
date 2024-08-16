@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import { Card, CardHeader, CardBody, Image, Button, Divider, CardFooter } from '@nextui-org/react';
+import { Card, CardHeader, CardBody, Link, Image, Button, Divider, CardFooter } from '@nextui-org/react';
 import HowToRegIcon from '@mui/icons-material/HowToReg';
 import LockIcon from '@mui/icons-material/Lock';
 import { ILiveTripData } from '../utils/types';
@@ -50,7 +50,7 @@ export default function LiveTripCard({ data }: { data?: ILiveTripData }) {
             <div className='border-b-1 border-white mb-4'></div>
             <div className='flex flex-row justify-between'>
               <a
-                href='/trip-info'
+                href={'/trip-info/' + data?.id}
                 className='inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'
               >
                 Explore
