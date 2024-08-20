@@ -30,8 +30,8 @@ const TripInfo = ({ params }: { params: { tripId: string } }) => {
       <section id='package-includes-section'>
         <div className='container mx-auto h-full'>
           <div className='flex flex-wrap flex-col justify-center'>
-            <div className='flex flex-row items-center justify-center'>
-              <div className=' text-5xl font-bold px-2 text-white my-10'>Package Includes</div>
+            <div className='flex flex-row items-center justify-center text-wrap'>
+              <p className=' text-5xl font-bold px-2 text-white my-10'>Package</p>
             </div>
             <div id='packages-container' className='p-4 w-full'>
               <div className='flex flex-wrap flex-row w-full'>
@@ -39,7 +39,7 @@ const TripInfo = ({ params }: { params: { tripId: string } }) => {
                   {data.package.map((item, index) => (
                     <div key={index} className='flex flex-row items-center justify-start mb-2'>
                       {StartSvg()}
-                      <div className='text-2xl font-semibold ml-2'>{item}</div>
+                      <p className='text-2xl font-semibold ml-2'>{item}</p>
                     </div>
                   ))}
                 </div>

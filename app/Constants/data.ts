@@ -97,7 +97,7 @@ export const tripInfoPageData: Record<string, ITripInfo> = {
       facebook: 'https://www.facebook.com/',
       threads: 'https://www.twitter.com/',
     },
-    package: ['Luxury Transport', 'Break fast', 'Photo Shoot', 'Dinner', 'Snacks', 'Chance to come in Vlog'],
+    package: ['Luxury Transport', 'Break fast', 'Photo Shoot', 'Dinner', 'Snacks', 'Chance to come in Vlog with Ahsan'],
     plan: [
       {
         day: 0,

@@ -60,11 +60,14 @@ export default function MainBar() {
     >
       <NavbarContent>
         <NavbarMenuToggle aria-label={isMenuOpen ? 'Close menu' : 'Open menu'} className='sm:hidden' />
-        <NavbarBrand className='flex gap-2 text-center mb-2'>
+        <NavbarBrand className='flex gap-2 items-center mb-2'>
           {/* <AcmeLogo /> */}
 
-          {LogoSvg({ width: '100px', height: '100px', color: 'white' })}
-          <p className='font-bold text-white '>The Collab Compass</p>
+          <a href='/'>{LogoSvg({ width: '100px', height: '100px', color: 'white' })}</a>
+
+          <a href='/'>
+            <p className='font-bold text-white '>The Collab Compass</p>
+          </a>
         </NavbarBrand>
       </NavbarContent>
 

@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Card, CardHeader, CardBody, Image, Button, Divider } from '@nextui-org/react';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import { ITripInfo, TimeLeft } from '../utils/types';
+import { whatsappLink } from '../utils/constants';
 
 function calculateTimeLeft(endTime: number): TimeLeft {
   const targetDate = new Date(endTime * 1000);
@@ -81,7 +82,7 @@ export default function TripInfoTripCard({ data }: { data?: ITripInfo }) {
           <div className='border-b-1 border-white mb-4'></div>
           <div className='flex flex-row justify-between'>
             <a
-              href='#'
+              href={whatsappLink}
               className='inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 w-full justify-center'
             >
               <div className='mr-2'>
