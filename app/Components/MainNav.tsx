@@ -84,16 +84,7 @@ export default function MainBar() {
           </Link>
         </NavbarItem>
       </NavbarContent>
-      {/* <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex">
-          <Link href="#">Login</Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
-            Sign Up
-          </Button>
-        </NavbarItem>
-      </NavbarContent> */}
+
       <div className='bg-white/35 backdrop-blur shadow-[#1c2418] backdrop-brightness-150 shadow-2xl'>
         <NavbarMenu className='bg-black/45 backdrop-blur shadow-[#1c2418] backdrop-brightness-150 shadow-2xl'>
           {menuItems.map((item, index) => (

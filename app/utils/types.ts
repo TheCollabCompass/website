@@ -4,7 +4,7 @@ export interface ILiveTripData {
   collaborator?: string;
   date?: string;
   price?: string;
-  timeEndsIn?: number;
+  timeEndsIn?: string | undefined;
   image?: string;
 }
 export interface IComingSoonTripData {
@@ -28,7 +28,7 @@ export interface ITripInfo {
     title: string;
     date: string;
     price: string;
-    timeEndsIn: number;
+    timeEndsIn: string;
     image: string;
   };
   collaboratorCard: {
@@ -48,3 +48,10 @@ export interface ITripInfo {
   attractions: (string | undefined)[];
   highlightsImages: (string | undefined)[];
 }
+
+export type TimeLeft = {
+  days?: number;
+  hours?: number;
+  minutes?: number;
+  seconds?: number;
+};

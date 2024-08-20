@@ -1,9 +1,56 @@
-import React from 'react';
+'use client';
+import React, { useEffect, useState } from 'react';
 import { Card, CardHeader, CardBody, Image, Button, Divider } from '@nextui-org/react';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import { ITripInfo } from '../utils/types';
+import { ITripInfo, TimeLeft } from '../utils/types';
 
+function calculateTimeLeft(endTime: number): TimeLeft {
+  const targetDate = new Date(endTime * 1000);
+  const difference = +targetDate - +new Date();
+  let timeLeft: TimeLeft = {};
+
+  if (difference > 0) {
+    timeLeft = {
+      days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+      hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+      minutes: Math.floor((difference / 1000 / 60) % 60),
+      seconds: Math.floor((difference / 1000) % 60),
+    };
+  }
+
+  return timeLeft;
+}
+
+function formatTimeLeft(timeLeft: TimeLeft) {
+  const formatTime = (time: number | undefined) => {
+    return time !== undefined && time < 10 ? `0${time}` : time;
+  };
+
+  return `${timeLeft.days ? `${timeLeft.days} Day${timeLeft.days > 1 ? 's' : ''}, ` : ''}${formatTime(
+    timeLeft.hours
+  )}:${formatTime(timeLeft.minutes)}:${formatTime(timeLeft.seconds)}`;
+}
 export default function TripInfoTripCard({ data }: { data?: ITripInfo }) {
+  const [timeLeft, setTimeLeft] = useState<TimeLeft | null>(null);
+  const endTime = Number(data?.tripCard.timeEndsIn);
+
+  useEffect(() => {
+    // Start the timer after the component has mounted to avoid hydration mismatch
+    setTimeLeft(calculateTimeLeft(endTime));
+
+    const timer = setInterval(() => {
+      setTimeLeft(calculateTimeLeft(endTime));
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, [endTime]);
+
+  // If timeLeft is null (before the component has mounted), return an empty string
+  if (timeLeft === null) {
+    return null;
+  }
+
+  const formattedTime = formatTimeLeft(timeLeft);
   return (
     <>
       <div className='max-w-sm  bg-white/20 backdrop-blur  rounded-2xl shadow-lg shadow-black/30  mb-4 overflow-hidden'>
@@ -41,30 +88,13 @@ export default function TripInfoTripCard({ data }: { data?: ITripInfo }) {
                 <WhatsAppIcon />
               </div>
               Contact On Whatsapp
-              {/* TODO: Replace with Whatsapp Icon  */}
-              {/* <svg
-                className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 14 10"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                />
-                
-              </svg> */}
             </a>
           </div>
         </div>
         <div className='mt-0'>
           <div className='border-t-1 border-white py-2 px-2 flex flex-row justify-between bg-red-500'>
-            <p className='font-bold'>REGISTRATION ENDS IN</p>
-            <p>1D : 24H : 30M : 30S</p>
+            <p className='font-bold'>Regs. ends in</p>
+            {formattedTime ? <p>{formattedTime}</p> : <span>Time up!</span>}
           </div>
         </div>
       </div>
