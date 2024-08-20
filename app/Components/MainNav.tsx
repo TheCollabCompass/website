@@ -13,6 +13,7 @@ import {
 } from '@nextui-org/react';
 import { LogoSvg } from '../Constants/svgIcons';
 import { ClassNames } from '@emotion/react';
+import { whatsappLink } from '../utils/constants';
 // import {AcmeLogo} from "./AcmeLogo.jsx";
 
 export default function MainBar() {
@@ -45,7 +46,7 @@ export default function MainBar() {
   const menuItems = [
     { title: 'Home', link: '/' },
     { title: 'About', link: '/about' },
-    { title: 'Whatsapp', link: '/' },
+    { title: 'Whatsapp', link: whatsappLink },
   ];
 
   return (
@@ -79,7 +80,7 @@ export default function MainBar() {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link className='text-white font-bold' href='#'>
+          <Link className='text-white font-bold' href={whatsappLink} target='_blank'>
             Whatsapp
           </Link>
         </NavbarItem>
