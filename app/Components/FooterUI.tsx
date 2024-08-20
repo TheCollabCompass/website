@@ -13,10 +13,9 @@ const FooterUI = () => {
         <hr className='my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8' />
 
         <div className='grid md:grid-cols-3 gap-6 justify-around w-full mb-5 sm:grid-col-1  '>
-          <div className='flex flex-col justify-between items-center align-middle gap-5'>
-            {/* <Image src={logoImage.src} width={250} height={250} /> */}
+          <div className='flex flex-col justify-between items-center align-middle gap-2'>
             {LogoSvg({ width: '250px', height: '250px', color: 'white' })}
-            <div className='flex mt-4 sm:justify-center sm:mt-0 items-center'>
+            <div className='flex mt-2 sm:justify-center sm:mt-0 items-center'>
               {/* <a href='#' className='text-gray-500 hover:text-gray-900 dark:hover:text-white'>
                 <svg
                   className='w-4 h-4'
@@ -131,9 +130,11 @@ const FooterUI = () => {
             </div>
             <div>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum debitis recusandae, vitae beatae
-                eligendi, non eos odit numquam quaerat praesentium totam officia dolorem at velit sed. Dicta corrupti
-                omnis vero!
+                Welcome to The Collab Compass, where adventure meets influence! We specialize in creating unforgettable
+                tours to the stunning northern areas of Pakistan, accompanied by your favorite social media influencers.
+                Our unique concept allows you to experience breathtaking destinations while connecting with popular
+                influencers you admire. Join us for an extraordinary journey, filled with entertainment, stunning
+                landscapes, and the chance to make unforgettable memories.
               </p>
             </div>
           </div>
