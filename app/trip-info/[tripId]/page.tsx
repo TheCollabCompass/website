@@ -36,12 +36,14 @@ const TripInfo = ({ params }: { params: { tripId: string } }) => {
             <div id='packages-container' className='p-4 w-full'>
               <div className='flex flex-wrap flex-row w-full'>
                 <div className='grid md:grid-cols-2 sm:grid-cols-1 gap-4 w-full'>
-                  {data.package.map((item, index) => (
-                    <div key={index} className='flex flex-row items-center justify-start mb-2'>
-                      {StartSvg()}
-                      <p className='text-2xl font-semibold ml-2'>{item}</p>
-                    </div>
-                  ))}
+                  {data && data.package
+                    ? data.package.map((item, index) => (
+                        <div key={index} className='flex flex-row items-center justify-start mb-2'>
+                          {StartSvg()}
+                          <p className='text-2xl font-semibold ml-2'>{item}</p>
+                        </div>
+                      ))
+                    : ''}
                 </div>
               </div>
             </div>
@@ -57,19 +59,23 @@ const TripInfo = ({ params }: { params: { tripId: string } }) => {
             <div id='plan-container' className='p-4 w-full'>
               <div className='flex flex-wrap flex-row w-full timeline-container'>
                 <div className='mb-4  '>
-                  {data.plan.map((item, index) => (
-                    <div key={index} className='mb-4'>
-                      <div className='text-2xl font-semibold mb-2'>Day : {item.day}</div>
-                      {item.events.map((event, index) => (
-                        <p
-                          key={index}
-                          className='p-2 bg-white bg-opacity-10 border border-gray-200 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 overflow-hidden mb-2'
-                        >
-                          {event}
-                        </p>
-                      ))}
-                    </div>
-                  ))}
+                  {data && data.plan
+                    ? data.plan.map((item, index) => (
+                        <div key={index} className='mb-4'>
+                          <div className='text-2xl font-semibold mb-2'>Day : {item.day}</div>
+                          {item && item.events
+                            ? item.events.map((event, index) => (
+                                <p
+                                  key={index}
+                                  className='p-2 bg-white bg-opacity-10 border border-gray-200 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 overflow-hidden mb-2'
+                                >
+                                  {event}
+                                </p>
+                              ))
+                            : ''}
+                        </div>
+                      ))
+                    : 'No Data'}
                 </div>
 
                 <div className='timeline-line'></div>

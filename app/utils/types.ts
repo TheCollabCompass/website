@@ -4,6 +4,7 @@ export interface ILiveTripData {
   collaborator?: string;
   date?: string;
   price?: string;
+  days?: string;
   timeEndsIn?: string | undefined;
   image?: string;
 }
@@ -12,6 +13,7 @@ export interface IComingSoonTripData {
   title?: string;
   collaborator?: string;
   date?: string;
+  days?: string;
   image?: string;
 }
 

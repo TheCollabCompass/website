@@ -43,6 +43,11 @@ const ComingSoonTripCard = ({ data }: { data?: IComingSoonTripData }) => {
                 </div>
 
                 <div className='mb-4'>
+                  <small className='text-default-300'>Days</small>
+                  <p className='font-bold text-lg'>{data?.days ? data?.days : 'N/A'}</p>
+                </div>
+
+                <div className='mb-4'>
                   <small className='text-default-300'>Expected Date</small>
                   <p className='font-bold text-lg'>{data?.date}</p>
                 </div>
