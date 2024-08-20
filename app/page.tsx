@@ -31,7 +31,7 @@ export default function Home() {
                 </div>
 
                 <div className='flex sm:mt-0 sm:justify-center md:justify-start items-center'>
-                  <a href='#' className='text-gray-500 hover:text-gray-900 dark:hover:text-white'>
+                  {/* <a href='#' target='_blank' className='text-gray-500 hover:text-gray-900 dark:hover:text-white'>
                     <svg
                       className='w-8 h-8'
                       aria-hidden='true'
@@ -46,13 +46,17 @@ export default function Home() {
                       />
                     </svg>
                     <span className='sr-only'>Facebook page</span>
-                  </a>
+                  </a> */}
 
-                  <a href='#' className='text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5 '>
+                  <a
+                    href='https://www.instagram.com/the.collab_compass?igsh=cm1iMjBwcG9mMW41'
+                    target='_blank'
+                    className='text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5 '
+                  >
                     <Instagram fontSize='small' className='w-8 h-8' />
                   </a>
 
-                  <a href='#' className='text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5'>
+                  {/* <a href='#' target='_blank' className='text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5'>
                     <svg
                       className='w-8 h-8'
                       aria-hidden='true'
@@ -67,8 +71,12 @@ export default function Home() {
                       />
                     </svg>
                     <span className='sr-only'>Twitter page</span>
-                  </a>
-                  <a href='#' className='text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5'>
+                  </a> */}
+                  <a
+                    href='https://github.com/TheCollabCompass'
+                    target='_blank'
+                    className='text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5'
+                  >
                     <svg
                       className='w-8 h-8'
                       aria-hidden='true'

@@ -16,7 +16,7 @@ const FooterUI = () => {
             {/* <Image src={logoImage.src} width={250} height={250} /> */}
             {LogoSvg({ width: '250px', height: '250px', color: 'white' })}
             <div className='flex mt-4 sm:justify-center sm:mt-0 items-center'>
-              <a href='#' className='text-gray-500 hover:text-gray-900 dark:hover:text-white'>
+              {/* <a href='#' className='text-gray-500 hover:text-gray-900 dark:hover:text-white'>
                 <svg
                   className='w-4 h-4'
                   aria-hidden='true'
@@ -31,13 +31,17 @@ const FooterUI = () => {
                   />
                 </svg>
                 <span className='sr-only'>Facebook page</span>
-              </a>
+              </a> */}
 
-              <a href='#' className='text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5 '>
+              <a
+                href='https://www.instagram.com/the.collab_compass?igsh=cm1iMjBwcG9mMW41'
+                target='_blank'
+                className='text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5 '
+              >
                 <Instagram fontSize='small' className='w-4 h-4' />
               </a>
 
-              <a href='#' className='text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5'>
+              {/* <a href='#' className='text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5'>
                 <svg
                   className='w-4 h-4'
                   aria-hidden='true'
@@ -52,8 +56,13 @@ const FooterUI = () => {
                   />
                 </svg>
                 <span className='sr-only'>Twitter page</span>
-              </a>
-              <a href='#' className='text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5'>
+              </a> */}
+
+              <a
+                href='https://github.com/TheCollabCompass'
+                target='_blank'
+                className='text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5'
+              >
                 <svg
                   className='w-4 h-4'
                   aria-hidden='true'
