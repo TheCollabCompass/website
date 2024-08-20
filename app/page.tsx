@@ -26,7 +26,7 @@ export default function Home() {
                   </div>
 
                   <p className='text-2xl mt-4 tracking-wider font-semibold'>
-                    Discover the majestic beauty of Pakistans mountain regions with the influencers you follow and love!
+                    Here you will get a chance to travel with the influencers you love and Follow
                   </p>
                   <p className='text-1xl mt-2 tracking-wider'>Pakistans First Influencer-Led Tourism Company!</p>
                 </div>
