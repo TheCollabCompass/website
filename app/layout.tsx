@@ -22,11 +22,10 @@ export default function RootLayout({
       <body className={`${inter.className} background-main-color`}>
         <NextUiProvider>
           <div className='bg-black/40 backdrop-blur-sm'>
-          <MainBar />
-          {children}
-          <FooterUI />
+            <MainBar />
+            {children}
+            <FooterUI />
           </div>
-         
         </NextUiProvider>
       </body>
     </html>
