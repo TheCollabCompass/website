@@ -13,10 +13,12 @@ const About = () => {
               <div className=' text-5xl font-bold px-2 text-white my-10'>About Us</div>
             </div>
             <p className='tracking-wider'>
-              At The Collab Compas, we bring a unique twist to your travel adventures. We are proud to be Pakistans
-              first travel agency that organizes exclusive trips to breathtaking mountain areas with the influencers you
-              admire. Our mission is to blend the thrill of exploration with the excitement of meeting and traveling
-              with your favorite social media stars.
+              Welcome to The Collab Compass, where travel meets influence! We are a pioneering tourism company dedicated
+              to creating unforgettable experiences by connecting social influencers, vloggers, and their followers on
+              exciting trips. Our mission is to offer more than just travel; we provide unique opportunities for
+              followers to become part of their favorite influencer’s journey, gaining exposure and creating memories
+              that last a lifetime. With us, every trip is a story waiting to be told, every adventure a chance to
+              shine. Join us in redefining travel—where you are not just a tourist but a star in the making!
             </p>
           </div>
 
