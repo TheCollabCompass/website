@@ -12,10 +12,11 @@ const ContactUs = () => {
           <p className='mb-4'>Have questions or need assistance? Reach out to our friendly support team:</p>
           <ul className='mb-4'>
             <li className='mb-2'>
-              <span className='font-bold'>Email:</span>thecollabcompass@gmail.com
+              <span className='font-bold'>Email : </span>
+              <p>thecollabcompass@gmail.com</p>
             </li>
             <li className='mb-2'>
-              <span className='font-bold'>Phone/Whatsapp:</span> 03091045145 / 03350078963
+              <span className='font-bold'>Phone/Whatsapp:</span> <p>03091045145 / 03350078963</p>
             </li>
           </ul>
           <div className='flex mt-4 sm:mt-0 items-center'>
