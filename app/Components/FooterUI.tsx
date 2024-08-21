@@ -130,11 +130,13 @@ const FooterUI = () => {
             </div>
             <div>
               <p>
-                Welcome to The Collab Compass, where adventure meets influence! We specialize in creating unforgettable
-                tours to the stunning northern areas of Pakistan, accompanied by your favorite social media influencers.
-                Our unique concept allows you to experience breathtaking destinations while connecting with popular
-                influencers you admire. Join us for an extraordinary journey, filled with entertainment, stunning
-                landscapes, and the chance to make unforgettable memories.
+                Welcome to The Collab Compass, where travel meets influence! We are a pioneering tourism company
+                dedicated to creating unforgettable experiences by connecting social influencers, vloggers, and their
+                followers on exciting trips. Our mission is to offer more than just travel; we provide unique
+                opportunities for followers to become part of their favorite influencers journey, gaining exposure and
+                creating memories that last a lifetime. With us, every trip is a story waiting to be told, every
+                adventure a chance to shine. Join us in redefining travel—where you are not just a tourist but a star in
+                the making!
               </p>
             </div>
           </div>
