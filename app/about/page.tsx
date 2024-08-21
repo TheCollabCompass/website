@@ -16,7 +16,7 @@ const About = () => {
               Welcome to The Collab Compass, where travel meets influence! We are a pioneering tourism company dedicated
               to creating unforgettable experiences by connecting social influencers, vloggers, and their followers on
               exciting trips. Our mission is to offer more than just travel; we provide unique opportunities for
-              followers to become part of their favorite influencer’s journey, gaining exposure and creating memories
+              followers to become part of their favorite influencers journey, gaining exposure and creating memories
               that last a lifetime. With us, every trip is a story waiting to be told, every adventure a chance to
               shine. Join us in redefining travel—where you are not just a tourist but a star in the making!
             </p>
