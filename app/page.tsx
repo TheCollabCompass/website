@@ -166,7 +166,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id='completed-trips-section'>
+      {/* <section id='completed-trips-section'>
         <div className='container mx-auto'>
           <div className='py-20 px-2'>
             <div className='flex flex-col space-y-24'>
@@ -185,7 +185,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* <ContactUs /> */}
     </>

@@ -22,6 +22,10 @@ function calculateTimeLeft(endTime: number): TimeLeft {
 }
 
 function formatTimeLeft(timeLeft: TimeLeft) {
+  // Check if the time is up
+  if (!timeLeft.days && !timeLeft.hours && !timeLeft.minutes && !timeLeft.seconds) {
+    return 'Time up!';
+  }
   const formatTime = (time: number | undefined) => {
     return time !== undefined && time < 10 ? `0${time}` : time;
   };

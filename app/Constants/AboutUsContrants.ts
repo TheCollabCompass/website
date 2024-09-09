@@ -32,7 +32,8 @@ export const HowItWorksData: any = [
   {
     sr: '2',
     title: 'Book Your Spot:',
-    description: 'Secure your place by booking online. Our easy-to-use platform ensures a hassle-free experience.',
+    description:
+      'Secure your place by contacting our team on Whatsapp. Our easy-to-use platform ensures a hassle-free experience.',
   },
   {
     sr: '3',
