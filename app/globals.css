@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 * {
   list-style: none;
   padding: 0;
@@ -11,21 +10,18 @@
   color: white;
 }
 
-
 .background-main-color {
-  background-image: url('/assets/images/bg-main.webp');
+  background-image: url('/assets/images/bg2.jpg');
   /* background-image: url('/assets/images/mainBackground.jpg'); */
   /* background-image: url('/assets/images/snow1.jpg'); */
   background-repeat: no-repeat;
- background-size: cover;
-background-position: center;
-background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .backgroundImage {
-  
   height: 100vh;
-  
 }
 
 .hero-container {
@@ -38,15 +34,15 @@ background-attachment: fixed;
 
 .timeline-line {
   position: absolute;
-    left: 20px;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background: linear-gradient(to bottom, #f8f8f800 50%, #ccc 50%);
-    background-size: 2px 20px;
-    background-repeat: repeat-y;
-    z-index: 0;
-    margin: -20px;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, #f8f8f800 50%, #ccc 50%);
+  background-size: 2px 20px;
+  background-repeat: repeat-y;
+  z-index: 0;
+  margin: -20px;
 }
 
 .timeline-container {

@@ -3,11 +3,11 @@ import { IComingSoonTripData, ICompletedTripData, ILiveTripData, ITripInfo } fro
 export const liveTripCardData: Array<ILiveTripData> = [
   {
     id: 's1t1',
-    title: '1 Day Trip to Mushkpuri Top',
-    collaborator: 'Bushra Tiwana',
-    date: '3rd Dec, 2024',
-    price: '7000',
-    timeEndsIn: '1730574038',
+    title: 'Trip to Neelum Valley',
+    collaborator: 'Singer Sonia Khan',
+    date: '27th Dec, 2024',
+    price: '15000',
+    timeEndsIn: '1735067306',
     days: '3',
     image: 'https://taskpay-testing.s3.us-east-005.backblazeb2.com/Trip-to-Mushkpuri-Top.jpg',
   },
@@ -16,9 +16,9 @@ export const liveTripCardData: Array<ILiveTripData> = [
 export const comingSoonTripCardData: Array<IComingSoonTripData> = [
   {
     id: 's1t1',
-    title: 'Neelum Valley Tour',
+    title: 'Trip to Naran Valley',
     collaborator: 'Iqra Kanwal',
-    date: '27th Sep, 2024',
+    date: 'comming soon',
     days: '3',
     image: 'https://clickpakistan.org/wp-content/uploads/2021/06/neelum-river1-min.jpg',
   },
@@ -37,19 +37,19 @@ export const completedTripCardData: Array<ICompletedTripData> = [
 export const tripInfoPageData: Record<string, ITripInfo> = {
   s1t1: {
     tripCard: {
-      title: '1 Day Trip to Mushkpuri Top',
-      date: '3rd May, 2024',
-      price: '7000',
-      timeEndsIn: '1730574038',
+      title: 'Trip to Neelum Valley',
+      date: '27th Dec, 2024',
+      price: '15000',
+      timeEndsIn: '1735067306',
       image: 'https://taskpay-testing.s3.us-east-005.backblazeb2.com/Trip-to-Mushkpuri-Top.jpg',
     },
     collaboratorCard: {
-      image: 'https://taskpay-testing.s3.us-east-005.backblazeb2.com/bushrahTiwana.jpeg',
-      name: 'Bushra Tiwana',
+      image: 'https://f005.backblazeb2.com/file/taskpay-testing/Singer_Sonia_khan.jpeg',
+      name: 'Singer Sonia Khan',
       description:
-        'Embark on a breathtaking journey to Mushkpuri with Bushra Tiwana! Hike, explore, and capture magical moments together!',
-      instagram: 'https://www.instagram.com/',
-      tiktok: 'https://www.tiktok.com/',
+        'Embark on a breathtaking journey to Mushkpuri with Sonia Khan! Hike, explore, and capture magical moments together!',
+      instagram: 'https://www.instagram.com/singer_soniakhan_official/profilecard/?igsh=c2JqZ3I5b2k5NWJy',
+      tiktok: 'https://www.tiktok.com/@singersoniakhanofficial?_t=8rM4nAVY6fi&_r=1',
       facebook: 'https://www.facebook.com/',
       threads: 'https://www.twitter.com/',
     },
@@ -58,27 +58,39 @@ export const tripInfoPageData: Record<string, ITripInfo> = {
       'Break fast',
       'Photo Shoot',
       'Dinner',
-      'Snacks',
-      'Chance to come in Vlog with Bushra Tiwana',
+      'Jeeps for visiting points',
+      'Chance to come in Vlog with Sonia Khan',
       'Exciting Games',
     ],
     plan: [
       {
         day: 0,
-        events: ['Departure from Thokar or Kalma Chowk terminal at 9:00PM', 'Arrived in Islamabad at 12:00PM'],
+        events: ['Departure from Thokar or Kalma Chowk terminal', 'Arrived in Islamabad'],
       },
       {
         day: 1,
         events: [
-          'Break fast in islamabad',
-          'Reach to Mushkpuri top',
-          'Hike to Mushkpuri top',
-          'Photo Shoot and rest',
-          'Play some games',
-          'Return back to islamabad',
-          'Dinner in islamabad',
-          'Arrived in Thokar',
+          'Break fast',
+          'Hotel Stay',
+          'Go to explore Jheel Saif-ul-mlook point of Neelum Valley',
+          'Dinner',
+          'Some Fun activities singing, antashri etc',
+          'Chance to come in Vlog with Sonia Khan',
         ],
+      },
+      {
+        day: 2,
+        events: [
+          'Break fast',
+          'Go to explore Jheel Shogran-risi-pay point of Neelum Valley',
+          'Dinner',
+          'Some Fun activities singing, antashri etc',
+          'Chance to come in Vlog with Sonia Khan',
+        ],
+      },
+      {
+        day: 3,
+        events: ['Break fast', 'Exlore Naran Sides', 'Back to Lahore'],
       },
     ],
     attractions: [

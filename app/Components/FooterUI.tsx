@@ -119,7 +119,7 @@ const FooterUI = () => {
                   <span className='font-bold'>Email:</span>thecollabcompass@gmail.com
                 </li>
                 <li>
-                  <span className='font-bold'>Phone/Whatsapp:</span> 03091045145 / 03350078963
+                  <span className='font-bold'>Phone/Whatsapp:</span> 03091045145
                 </li>
               </ul>
             </div>

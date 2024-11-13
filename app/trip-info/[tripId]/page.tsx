@@ -127,9 +127,9 @@ const TripInfo = ({ params }: { params: { tripId: string } }) => {
           <div className='flex justify-center'>
             <div className='grid md:grid-cols-3 sm:grid-cols-1 gap-4 w-full'>
               <p>
-                Ready to explore Pakistan like never before? Book your next adventure with The Collab Compas and create
-                memories that will last a lifetime. Follow us on social media to stay updated on our latest trips and
-                special offers.
+                Ready to explore Pakistan like never before? Book your next adventure with The Collab Compas using
+                whatsapp and create memories that will last a lifetime. Follow us on social media to stay updated on our
+                latest trips and special offers.
               </p>
             </div>
           </div>

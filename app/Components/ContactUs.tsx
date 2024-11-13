@@ -16,7 +16,7 @@ const ContactUs = () => {
               <p>thecollabcompass@gmail.com</p>
             </li>
             <li className='mb-2'>
-              <span className='font-bold'>Phone/Whatsapp:</span> <p>03091045145 / 03350078963</p>
+              <span className='font-bold'>Phone/Whatsapp:</span> <p>03091045145</p>
             </li>
           </ul>
           <div className='flex mt-4 sm:mt-0 items-center'>
