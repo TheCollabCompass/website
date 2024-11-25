@@ -47,7 +47,7 @@ export const tripInfoPageData: Record<string, ITripInfo> = {
       image: 'https://f005.backblazeb2.com/file/taskpay-testing/Singer_Sonia_khan.jpeg',
       name: 'Singer Sonia Khan',
       description:
-        'Embark on a breathtaking journey to Mushkpuri with Sonia Khan! Hike, explore, and capture magical moments together!',
+        'Embark on a breathtaking journey to Naran valley with Sonia Khan! Hike, explore, and capture magical moments together!',
       instagram: 'https://www.instagram.com/singer_soniakhan_official/profilecard/?igsh=c2JqZ3I5b2k5NWJy',
       tiktok: 'https://www.tiktok.com/@singersoniakhanofficial?_t=8rM4nAVY6fi&_r=1',
       facebook: 'https://www.facebook.com/',
