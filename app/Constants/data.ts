@@ -3,7 +3,7 @@ import { IComingSoonTripData, ICompletedTripData, ILiveTripData, ITripInfo } fro
 export const liveTripCardData: Array<ILiveTripData> = [
   {
     id: 's1t1',
-    title: 'Trip to Neelum Valley',
+    title: 'Trip to Naran Valley',
     collaborator: 'Singer Sonia Khan',
     date: '27th Dec, 2024',
     price: '15000',
@@ -14,14 +14,14 @@ export const liveTripCardData: Array<ILiveTripData> = [
 ];
 
 export const comingSoonTripCardData: Array<IComingSoonTripData> = [
-  {
-    id: 's1t1',
-    title: 'Trip to Naran Valley',
-    collaborator: 'Iqra Kanwal',
-    date: 'comming soon',
-    days: '3',
-    image: 'https://clickpakistan.org/wp-content/uploads/2021/06/neelum-river1-min.jpg',
-  },
+  // {
+  //   id: 's1t1',
+  //   title: 'Trip to Naran Valley',
+  //   collaborator: 'Iqra Kanwal',
+  //   date: 'comming soon',
+  //   days: '3',
+  //   image: 'https://clickpakistan.org/wp-content/uploads/2021/06/neelum-river1-min.jpg',
+  // },
 ];
 
 export const completedTripCardData: Array<ICompletedTripData> = [
@@ -37,7 +37,7 @@ export const completedTripCardData: Array<ICompletedTripData> = [
 export const tripInfoPageData: Record<string, ITripInfo> = {
   s1t1: {
     tripCard: {
-      title: 'Trip to Neelum Valley',
+      title: 'Trip to Naran Valley',
       date: '27th Dec, 2024',
       price: '15000',
       timeEndsIn: '1735067306',
@@ -72,7 +72,7 @@ export const tripInfoPageData: Record<string, ITripInfo> = {
         events: [
           'Break fast',
           'Hotel Stay',
-          'Go to explore Jheel Saif-ul-mlook point of Neelum Valley',
+          'Go to explore Jheel Saif-ul-mlook point',
           'Dinner',
           'Some Fun activities singing, antashri etc',
           'Chance to come in Vlog with Sonia Khan',
@@ -82,7 +82,7 @@ export const tripInfoPageData: Record<string, ITripInfo> = {
         day: 2,
         events: [
           'Break fast',
-          'Go to explore Jheel Shogran-risi-pay point of Neelum Valley',
+          'Go to explore Jheel Shogran-risi-pay point',
           'Dinner',
           'Some Fun activities singing, antashri etc',
           'Chance to come in Vlog with Sonia Khan',
